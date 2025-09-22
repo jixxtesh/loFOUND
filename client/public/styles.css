@@ -1,0 +1,22 @@
+/* styles.css */
+
+/* Override Chrome Autofill Styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Override Placeholder Styles */
+input::placeholder {
+  color: #a0aec0; /* Adjust the color to fit your theme */
+}
+
+/* Override Autofill Background Color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: #ffffff !important; /* Set the desired background color */
+}
