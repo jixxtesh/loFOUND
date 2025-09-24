@@ -20,7 +20,7 @@ const AboutUsPage = () => {
           <span className="text-navy">FOUND</span>
         </div>
         <p className="text-navy font-bold">
-          A loFOUND Web-App built in MERN Stack
+          A modern web app powered by the MERN stack.
         </p>
       </header>
       <section className="mb-6">
