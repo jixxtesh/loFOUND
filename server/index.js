@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.enable("trust proxy");
 dotenv.config();
 connectDatabase();
-const allowedOrigins = ['http://localhost:3000', 'https://lofound-jixx.vercel.app/login'];
+const allowedOrigins = ['http://localhost:3000', 'https://lofound-jixx.vercel.app/'];
 app.use(cors({
   origin: allowedOrigins,
   credentials: true,
