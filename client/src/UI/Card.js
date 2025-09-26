@@ -20,17 +20,43 @@ const Card = ({ item, isCreator, onDelete, changeStatus }) => {
           className="w-full h-48"
         />
       </div>
-      <h2 className="text-2xl text-navy my-2 font-semibold uppercase">{tag}</h2>
+      <h2 className="text-lg text-navy my-2 font-semibold uppercase">{tag}</h2>
       <hr className="h-0.5 w-28 rounded my-2 border-0 bg-navy "></hr>
       <div className="space-x-2"></div>
       <p className="text-md text-gray-700 font-medium py-0.5 capitalize">
         {description}
       </p>
-      <p className="text-md text-gray-700 font-medium py-0.5 uppercase">{`Last Seen :   ${dateObject.toLocaleString()}`}</p>
+      {/* <p className="text-md text-gray-700 font-medium py-0.5 uppercase">
+  <span className="font-bold">Last Seen :</span> {dateObject.toLocaleString()}
+</p>
+
+<p className="text-md text-gray-700 font-medium py-0.5 uppercase">
+  <span className="font-bold">Location :</span> {location}
+</p> */}
+<p className="text-md text-green-800 font-medium py-0.5">
+  <span className="font-bold text-sky">Last Seen:</span> {dateObject.toLocaleString()}
+</p>
+
+<p className="text-md text-green-800 font-medium py-0.5">
+  <span className="font-bold text-sky">Location:</span> {location}
+</p>
+
+<p className="text-md font-medium py-0.5 uppercase">
+  <span className="font-bold text-sky">Status :</span>{" "}
+  <span className={status ? "text-yellow-400" : "text-red-500"}>
+    {status ? "RETURNED TO THE OWNER" : "NOT YET RETURNED"}
+  </span>
+</p>
+
+{/* <p className="text-md text-green-800 font-medium py-0.5 uppercase">
+  <span className="font-bold text-sky">Status :</span> {status ? "Returned to the owner" : "Not yet found"}
+</p> */}
+
+      {/* <p className="text-md text-gray-700 font-medium py-0.5 uppercase">{`Last Seen :   ${dateObject.toLocaleString()}`}</p>
       <p className="text-md text-gray-700 font-medium py-0.5 uppercase">{`Location : ${location}`}</p>
       <p className="text-md text-gray-700 font-medium py-0.5 uppercase">{`Status: ${
         status ? "Returned to the owner" : "Not yet found"
-      }`}</p>
+      }`}</p> */}
       <div className="mt-4 flex flow-root">
         {isCreator ? (
           <button
