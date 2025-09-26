@@ -19,21 +19,6 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ProtectedRoute from "./utils/ProtectedRoute";
 
 import Footer from "./UI/Footer";
-const express = require('express');
-const cors = require('cors');
-const app = express();
-
-// Allow requests from your frontend only
-app.use(cors({
-  origin: 'https://lofound-jixx.vercel.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true // if you use cookies
-}));
-
-// Your existing routes
-app.post('/login', (req, res) => {
-  // login logic
-});
 
 
 
