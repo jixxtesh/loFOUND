@@ -21,7 +21,9 @@ const Signup = () => {
     formData.append("phone", phone);
 
     try {
+      // const response = await fetch(`${process.env.REACT_APP_BASE_URL}/register`, {
       const response = await fetch(`${process.env.REACT_APP_BASE_URL}/register`, {
+
         method: "POST",
         body: formData,
       });
