@@ -18,28 +18,17 @@ app.use(cookieParser());
 app.enable("trust proxy");
 dotenv.config();
 connectDatabase();
-const allowedOrigins = ['http://localhost:3000', 'https://lofound-jixx.vercel.app/'];
+const allowedOrigins = ['http://localhost:3000', 'https://lofound-jixx.vercel.app'];
 app.use(cors({
-  origin: allowedOrigins,
+  // origin: allowedOrigins,
+  origin: '*',
   methods: ['GET','POST','PUT','DELETE','OPTIONS'],
   credentials: true,
 }));
 
 app.options('*', cors());
 
-// Routes
-app.post('/login', (req, res) => {
-  // Your login logic
-  const { email, password } = req.body;
-  // Dummy response
-  res.json({ token: 'abc123', userId: '1', email });
-});
 
-app.post('/register', (req, res) => {
-  const { name, email, password } = req.body;
-  // Dummy response
-  res.json({ message: 'User registered', userId: '1', email });
-});
 
 const user = require("./routes/userRoute.js");
 const item = require("./routes/itemRoute.js");
