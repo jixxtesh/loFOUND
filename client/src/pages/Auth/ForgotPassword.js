@@ -11,7 +11,7 @@ const auth = useContext(AuthContext);
     setIsSubmitting(true);
     const url = `http://localhost:3000/password/reset`;
     try {
-      const response = await fetch(`${process.env.REACT_APP_BASE_URL}password/forgot`, {
+      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/password/forgot`, {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${auth.token}`,

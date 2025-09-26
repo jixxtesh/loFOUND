@@ -11,7 +11,7 @@ const ResetPassword = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_BASE_URL}password/reset/01fe00be7e386800a75304ec3364b437bd3a255b`, {
+      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/password/reset/01fe00be7e386800a75304ec3364b437bd3a255b`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
