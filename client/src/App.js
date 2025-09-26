@@ -17,7 +17,11 @@ import ResetPassword from "./pages/Auth/ResetPassword";
 import About from "./pages/About/About";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ProtectedRoute from "./utils/ProtectedRoute";
+
 import Footer from "./UI/Footer";
+
+
+
 
 
 
@@ -200,6 +204,7 @@ const router = createBrowserRouter([
 
 function App() {
   const { token, login, logout, userId } = useAuth();
+
   return (
     <AuthContext.Provider
       value={{
@@ -210,21 +215,7 @@ function App() {
         logout: logout,
       }}
     >
-      {/* <HomePage/>
-       <LostItems/>
-       <FoundItems/>
-       <Login/>
-       <Signup/>
-       <ReportNewItem/>
-       <MyItems/>
-      <UpdateItem/>
-
-       <Item/>
-       <DeleteItem/>
-       <UserProfile/>
-       <ForgotPassword/>
-       <ResetPassword/> */}
-      <RouterProvider router={router} />
+      <RouterProvider router={router} /> {/* or <Routes> if using react-router-dom v6 */}
     </AuthContext.Provider>
   );
 }
