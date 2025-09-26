@@ -21,6 +21,7 @@ connectDatabase();
 const allowedOrigins = ['http://localhost:3000', 'https://lofound-jixx.vercel.app/'];
 app.use(cors({
   origin: allowedOrigins,
+  methods: ['GET','POST','PUT','DELETE','OPTIONS'],
   credentials: true,
 }));
 
