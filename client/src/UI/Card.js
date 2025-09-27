@@ -33,11 +33,11 @@ const Card = ({ item, isCreator, onDelete, changeStatus }) => {
 <p className="text-md text-gray-700 font-medium py-0.5 uppercase">
   <span className="font-bold">Location :</span> {location}
 </p> */}
-<p className="text-md text-green-800 font-medium py-0.5">
+<p className="text-md text-black-800 font-medium py-0.5">
   <span className="font-bold text-sky">Last Seen:</span> {dateObject.toLocaleString()}
 </p>
 
-<p className="text-md text-green-800 font-medium py-0.5">
+<p className="text-md text-black-800 font-medium py-0.5">
   <span className="font-bold text-sky">Location:</span> {location}
 </p>
 
