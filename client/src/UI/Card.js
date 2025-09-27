@@ -43,7 +43,7 @@ const Card = ({ item, isCreator, onDelete, changeStatus }) => {
 
 <p className="text-md font-medium py-0.5 uppercase">
   <span className="font-bold text-sky">Status :</span>{" "}
-  <span className={status ? "text-yellow-400" : "text-red-500"}>
+  <span className={status ? "text-yellow-400" : "text-red-600"}>
     {status ? "RETURNED TO THE OWNER" : "NOT YET RETURNED"}
   </span>
 </p>
