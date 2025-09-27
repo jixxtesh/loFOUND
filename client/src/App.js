@@ -43,7 +43,7 @@ const NavbarWrapper = () => {
       <div className="flex-grow">
         <Outlet />
       </div>
-      <Footer />   {'Made by Jitesh'}
+      <Footer />   {''}
     </div>
   );
 };
