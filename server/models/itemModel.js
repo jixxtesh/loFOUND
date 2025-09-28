@@ -24,7 +24,7 @@ const itemSchema = new mongoose.Schema({
         required:true,
     },
     datetime:{
-        type:Date,
+        type:String,
         required:true,
     },
     image:{

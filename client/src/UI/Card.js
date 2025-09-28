@@ -33,7 +33,7 @@ const Card = ({ item, isCreator, onDelete, changeStatus }) => {
 <p className="text-md text-gray-700 font-medium py-0.5 uppercase">
   <span className="font-bold">Location :</span> {location}
 </p> */}
-<p className="text-md text-black-800 font-medium py-0.5">
+{/* <p className="text-md text-black-800 font-medium py-0.5">
   <span className="font-bold text-sky">Last Seen:</span> {dateObject.toLocaleString()}
 </p>
 
@@ -46,7 +46,27 @@ const Card = ({ item, isCreator, onDelete, changeStatus }) => {
   <span className={status ? "text-yellow-400" : "text-red-600"}>
     {status ? "RETURNED TO THE OWNER" : "NOT YET RETURNED"}
   </span>
+</p> */}
+
+
+<p className="text-md font-medium py-0.5">
+  <span className="font-bold text-black">Last Seen:</span>{" "}
+  {dateObject.toLocaleString()}
 </p>
+
+<p className="text-md font-medium py-0.5">
+  <span className="font-bold text-black">Location:</span>{" "}
+  {location}
+</p>
+
+<p className="text-md font-medium py-0.5">
+  <span className="font-bold text-black">Status:</span>{" "}
+  <span className={status ? "text-lime-600 font-semibold" : "text-red-600 font-semibold"}>
+    {status ? "RETURNED TO THE OWNER" : "NOT YET FOUND"}
+  </span>
+</p>
+
+
 
 {/* <p className="text-md text-green-800 font-medium py-0.5 uppercase">
   <span className="font-bold text-sky">Status :</span> {status ? "Returned to the owner" : "Not yet found"}
