@@ -19,7 +19,7 @@ function HomePage() {
 
 
             <p className="text-lg md:text-xl mb-8 text-navy font-medium">
-              Never lose your stuff on university campus again!
+              Never lose your belongings on university campus again!
             </p>
           </div>
           <img
