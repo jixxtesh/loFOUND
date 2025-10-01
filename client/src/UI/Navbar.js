@@ -16,7 +16,7 @@ function Navbar() {
         <div className="flex items-center ">
           <span className="text-4xl font-black">
             <Link to="/">
-              <span className="text-sky">loFOUN</span>
+              <span className="text-sky">loFOUND</span>
              <span className="text-navy"></span>
             </Link>
           </span>
