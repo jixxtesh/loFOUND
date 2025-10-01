@@ -8,13 +8,13 @@ function HomePage() {
       {/* Hero Section */}
       <section className="bg-white h-screen flex items-center text-gray-800">
         <div className="container mx-auto text-center items-center grid grid-cols-2">
-          <div className="mb-8 mx-auto max-w-full">
-            <h1 className="text-4xl md:text-6xl text-sky font-bold mb-4">
+          <div className="px-4 md:px-8 mb-8 mx-auto max-w-full">
+          <h1 className="text-4xl md:text-6xl text-sky font-bold mb-4">
               Welcome to the
             </h1>
             <h1 className="text-4xl md:text-6xl text-navy font-bold mb-4">
               loFOUND</h1>
-<h1 className="text-4xl md:text-6xl text-sky font-bold mb-4">app </h1>
+<h1 className="text-4xl md:text-6xl text-sky font-bold mb-4">web app </h1>
 
 
 

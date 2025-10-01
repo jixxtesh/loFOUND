@@ -11,7 +11,7 @@ function Navbar() {
     setMobileMenuOpen(!mobileMenuOpen);
   };
   return (
-    <nav className="bg-green-50 outline outline-gray-300 outline-1 py-2 md:py-0">
+    <nav className="px-4 md:px-8 bg-green-50 outline outline-gray-300 outline-1 py-2 md:py-0">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center ">
           <span className="text-4xl font-black">
