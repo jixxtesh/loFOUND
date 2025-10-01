@@ -62,7 +62,13 @@ const Card = ({ item, isCreator, onDelete, changeStatus }) => {
 <p className="text-md font-medium py-0.5">
   <span className="font-bold text-black">Status:</span>{" "}
   <span className={status ? "text-lime-600 font-semibold" : "text-red-600 font-semibold"}>
-    {status ? "RETURNED TO THE OWNER" : "NOT YET FOUND"}
+    {/* {status ? "RETURNED TO THE OWNER" : "NOT YET FOUND"} */}
+    {status
+  ? "OWNER RECIEVED IT"
+  : item.type === "found"
+  ? "NOT RETURNED TO OWNER YET"
+  : "NOT YET FOUND"}
+
   </span>
 </p>
 
