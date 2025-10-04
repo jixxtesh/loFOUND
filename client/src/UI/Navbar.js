@@ -55,15 +55,33 @@ function Navbar() {
                 </li>
               </>
             )}
+           
             {auth.isLoggedIn && (
               <>
+            
                 {auth.userId && (
-                  <li className="border-4 border-white hover:border-b-sky p-2">
-                    <Link className="text-xl" to="profile">
-                      {" "}
-                      <FontAwesomeIcon icon={faUser} />
-                    </Link>
-                  </li>
+<li className="border-4 border-white hover:border-b-sky p-2">
+  <Link className="text-xl" to="profile">
+    <div className="flex items-center text-base font-medium border border-black rounded-md px-3 py-2 
+                    ml-2 -mt-1">
+      <FontAwesomeIcon icon={faUser} />
+      <span>Profile</span>
+    </div>
+  </Link>
+</li>
+
+
+
+
+                  // <li className="border-4 border-white hover:border-b-sky p-2">
+                  //   <Link className="text-xl" to="profile">
+                  //     {" "}
+                  //    <div className="flex items-center space-x-4 text-base font-medium space-x-2 border border-black rounded-md px-3 py-2">
+                  // <FontAwesomeIcon icon={faUser} />
+                  // <span>Profile</span>
+                  // </div>
+                  //   </Link>
+                  // </li>
                 )}
                 <li className="py-2">
                   <button
@@ -74,7 +92,9 @@ function Navbar() {
                   </button>
                 </li>
               </>
-            )}
+            )} 
+
+
           </ul>
         </div>
         <div className="md:hidden">

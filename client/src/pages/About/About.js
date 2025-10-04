@@ -28,7 +28,7 @@ const AboutUsPage = () => {
           Introduction
         </h2>
         <p className="text-gray-600 ">
-          loFOUND is designed to be a centralized hub for the university community. On a busy campus,
+          loFOUND is designed to be a centralized hub the university community. On a busy campus,
           it’s common for people to misplace or find items. 
           loFOUND streamlines the process of reporting lost belongings and helps ensure their return to the rightful owners. By applying technology, we aim to improve the overall 
           lost and found experience across the university.

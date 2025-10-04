@@ -112,11 +112,11 @@ const UserProfile = () => {
         User Profile
       </h2>
       <div className="mb-4 md:flex items-center p-8">
-        <img
+        {/* <img
           src={user.avatar?user.avatar.url:"https://via.placeholder.com/150"}
           alt="Profile"
           className="rounded-full mr-4 h-48 w-48"
-        />
+        /> */}
         <div className="p-4 text-xl">
           <p className="py-2">
             <span className="font-bold text-navy">Name:</span>{" "}
