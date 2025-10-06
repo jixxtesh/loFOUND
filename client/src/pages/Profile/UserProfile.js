@@ -48,7 +48,7 @@ const UserProfile = () => {
       }
     };
     fetchUserData();
-  }, [auth.token]);
+  }, [auth.token, auth.isLoggedIn]);
 
   useEffect(() => {
     setUpdatedUser(user);
@@ -111,12 +111,7 @@ const UserProfile = () => {
       <h2 className="text-navy text-5xl text-center font-bold p-4">
         User Profile
       </h2>
-      <div className="mb-4 md:flex items-center p-8">
-        {/* <img
-          src={user.avatar?user.avatar.url:"https://via.placeholder.com/150"}
-          alt="Profile"
-          className="rounded-full mr-4 h-48 w-48"
-        /> */}
+      <div className="mb-4 p-8">
         <div className="p-4 text-xl">
           <p className="py-2">
             <span className="font-bold text-navy">Name:</span>{" "}
