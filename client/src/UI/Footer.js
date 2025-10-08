@@ -10,7 +10,7 @@ const Footer = () => {
         rel="noopener noreferrer"
         className="underline text-blue-600 hover:underline"
       >
-        Jitesh Saini
+        Jitesh Sain
       </a>
     </footer>
   );
