@@ -62,35 +62,44 @@ function Navbar() {
                 {auth.userId && (
 <li className="border-4 border-white hover:border-b-sky p-2">
   <Link className="text-xl" to="profile">
-    <div className="flex items-center text-base font-medium border border-black rounded-md px-3 py-2 
+
+
+<div className="flex items-center gap-2 text-base font-medium border border-black rounded-md px-3 py-2 ml-2 -mt-1">
+  <FontAwesomeIcon icon={faUser} />
+  <span>Profile</span>
+</div>
+
+    
+    
+    
+    
+    {/* <div className="flex items-center text-base font-medium border border-black rounded-md px-3 py-2 
                     ml-2 -mt-1">
       <FontAwesomeIcon icon={faUser} />
       <span>Profile</span>
-    </div>
+    </div> */}
   </Link>
 </li>
 
-
-
-
-                  // <li className="border-4 border-white hover:border-b-sky p-2">
-                  //   <Link className="text-xl" to="profile">
-                  //     {" "}
-                  //    <div className="flex items-center space-x-4 text-base font-medium space-x-2 border border-black rounded-md px-3 py-2">
-                  // <FontAwesomeIcon icon={faUser} />
-                  // <span>Profile</span>
-                  // </div>
-                  //   </Link>
-                  // </li>
                 )}
-                <li className="py-2">
+<li className="py-2 -ml-5">
+  <button
+    onClick={auth.logout}
+    className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
+  >
+    Logout
+  </button>
+</li>
+
+
+                {/* <li className="py-2">
                   <button
                     onClick={auth.logout}
                     className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
                   >
                     Logout
                   </button>
-                </li>
+                </li> */}
               </>
             )} 
 
@@ -162,14 +171,28 @@ function Navbar() {
             )}
             {auth.isLoggedIn && (
               <>
-                {auth.userId && (
+               {auth.userId && (
+  <li className="p-0 m-0">
+    <Link
+      to="profile"
+      className="flex items-center gap-1 text-sm font-medium border border-black rounded px-1.5 py-0.5 leading-tight"
+    >
+      <FontAwesomeIcon icon={faUser} className="text-base" />
+      <span className="text-sm">Profile</span>
+    </Link>
+  </li>
+)}
+
+
+
+{/* {auth.userId && (
                   <li className="border-4 border-white p-2 ">
                     <Link className="text-xl" to="profile">
                       {" "}
                       <FontAwesomeIcon icon={faUser} />
                     </Link>
                   </li>
-                )}
+                )} */}
                 <li className="">
                   <button
                     onClick={auth.logout}
