@@ -171,28 +171,40 @@ function Navbar() {
             )}
             {auth.isLoggedIn && (
               <>
-               {auth.userId && (
+
+{/* {auth.userId && (
   <li className="p-0 m-0">
     <Link
       to="profile"
-      className="flex items-center gap-1 text-sm font-medium border border-black rounded px-1.5 py-0.5 leading-tight"
+      className="inline-flex items-center justify-center gap-2 border border-black rounded-md px-3 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 transition-all duration-200 w-full text-center"
     >
-      <FontAwesomeIcon icon={faUser} className="text-base" />
+      <FontAwesomeIcon icon={faUser} className="text-sm" />
       <span className="text-sm">Profile</span>
     </Link>
   </li>
-)}
+)} */}
 
 
 
-{/* {auth.userId && (
-                  <li className="border-4 border-white p-2 ">
-                    <Link className="text-xl" to="profile">
-                      {" "}
-                      <FontAwesomeIcon icon={faUser} />
-                    </Link>
-                  </li>
-                )} */}
+
+
+
+ {auth.userId && (
+  <li className="p-0 m-0">
+    <Link
+      to="profile"
+      className="flex items-center justify-center gap-2 border border-black rounded px-2 py-1 text-sm font-medium leading-none w-fit"
+    >
+      <FontAwesomeIcon icon={faUser} className="text-sm" />
+      <span className="text-sm">Profile</span>
+    </Link>
+  </li>
+)} 
+
+
+
+
+
                 <li className="">
                   <button
                     onClick={auth.logout}
