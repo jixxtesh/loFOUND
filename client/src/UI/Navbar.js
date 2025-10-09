@@ -172,50 +172,32 @@ function Navbar() {
             {auth.isLoggedIn && (
               <>
 
-{/* {auth.userId && (
-  <li className="p-0 m-0">
-    <Link
-      to="profile"
-      className="inline-flex items-center justify-center gap-2 border border-black rounded-md px-3 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 transition-all duration-200 w-full text-center"
-    >
-      <FontAwesomeIcon icon={faUser} className="text-sm" />
-      <span className="text-sm">Profile</span>
-    </Link>
-  </li>
-)} */}
-
-
-
-
-
-
  {auth.userId && (
   <li className="p-0 m-0">
     <Link
       to="profile"
-      className="flex items-center justify-center gap-2 border border-black rounded px-2 py-1 text-sm font-medium leading-none w-fit"
+      className="flex items-center justify-center gap-2 rounded-md border border-gray-400 bg-white px-3 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 w-full text-center leading-none"
+      //className="inline-flex items-center justify-center gap-2 border border-black rounded-md px-3 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 transition-all duration-200 w-full text-center"
     >
       <FontAwesomeIcon icon={faUser} className="text-sm" />
       <span className="text-sm">Profile</span>
     </Link>
   </li>
-)} 
+)}
 
 
-
-
-
-                <li className="">
-                  <button
-                    onClick={auth.logout}
-                    className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
-                  >
-                    Logout
-                  </button>
-                </li>
-              </>
-            )}
-          </ul>
+<li className="p-0 m-0">
+  <button
+    onClick={auth.logout}
+    className="flex items-center justify-center gap-2 rounded-md border border-gray-400 bg-white px-3 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 w-full text-center leading-none"
+    //className="inline-flex items-center justify-center gap-2 border border-black rounded-md px-3 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 transition-all duration-200 w-full text-center"
+  >
+    Logout
+  </button>
+</li>
+ </>
+            )}            
+       </ul>
         </div>
       )}
     </nav>
@@ -223,3 +205,6 @@ function Navbar() {
 }
 
 export default Navbar;
+
+                
+             
