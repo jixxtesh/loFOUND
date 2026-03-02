@@ -6,7 +6,7 @@ const ResetPassword = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [message, setMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const auth = useContext(AuthContext);
+  //const auth = useContext(AuthContext);
   const handleResetPassword = async () => {
     setIsSubmitting(true);
 
