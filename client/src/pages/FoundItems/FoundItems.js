@@ -8,10 +8,10 @@ const FoundItems = (props) => {
   const auth = useAuth(AuthContext);
   const [foundItems, setFoundItems] = useState([]);
   const [loading, setLoading] = useState(true);
-  const { deleteItem, isDeleting, error } = useDeleteItem();
+  //const { deleteItem, isDeleting, error } = useDeleteItem();
   const handleDeleteItem = async (itemId) => {
     try {
-      await deleteItem(itemId);
+     // await deleteItem(itemId);
       fetchFoundItems();
       console.log("Item deleted successfully");
     } catch (error) {
